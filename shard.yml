@@ -1,0 +1,9 @@
+name: honeybadger
+version: 0.1.0
+
+authors:
+  - Theodor Tonum <theodor@tonum.no>
+
+crystal: 0.23.1
+
+license: MIT
