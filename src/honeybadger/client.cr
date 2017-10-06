@@ -81,7 +81,7 @@ module Honeybadger
     end
 
     private def environment_name
-      ENV["HONEYBADGER_ENV"]? || ENV["KEMAL_ENV"]? || ENV["CRYSTAL_ENV"]? || "development",
+      ENV["HONEYBADGER_ENV"]? || ENV["KEMAL_ENV"]? || ENV["CRYSTAL_ENV"]? || "development"
     end
   end
 end
