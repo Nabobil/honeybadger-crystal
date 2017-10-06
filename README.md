@@ -35,7 +35,7 @@ Honeybadger(ex, context: { user_id: "123" })
 
 Use the following environment variables:
 
-- `HONEYBADGER_TOKEN`
+- `HONEYBADGER_API_KEY`
 - `HONEYBADGER_ENV`
 
 If the env is not set the client will attempt to fallback using
@@ -46,7 +46,7 @@ If the env is not set the client will attempt to fallback using
 
 ## Development
 
-Set the `HONEYBADGER_TOKEN` to a test project to run specs.
+Set the `HONEYBADGER_API_KEY` to a test project to run specs.
 
 ## Contributing
 
