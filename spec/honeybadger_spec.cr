@@ -12,8 +12,8 @@ describe Honeybadger do
         method: "POST",
         resource: "/foobar?query=param",
         headers: HTTP::Headers{
-          "Host" => "www.example.com",
-          "Content-Type" => "application/json"
+          "Host"         => "www.example.com",
+          "Content-Type" => "application/json",
         },
         body: <<-JSON
         {"key":"value"}
@@ -24,7 +24,7 @@ describe Honeybadger do
 
     it "works when passing a context" do
       Honeybadger.notify(DummyError.new, context: {
-        user_id: "124"
+        user_id: "124",
       })
     end
   end
