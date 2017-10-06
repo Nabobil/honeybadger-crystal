@@ -9,7 +9,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   honeybadger:
-    github: Nabobil/honeybadger
+    github: Nabobil/honeybadger-crystal
 ```
 
 ## Usage
@@ -50,7 +50,7 @@ Set the `HONEYBADGER_TOKEN` to a test project to run specs.
 
 ## Contributing
 
-1. Fork it ( https://github.com/Nabobil/honeybadger/fork )
+1. Fork it ( https://github.com/Nabobil/honeybadger-crystal/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
