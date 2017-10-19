@@ -1,5 +1,8 @@
 module Honeybadger
   class Client
+    PLATFORM = `uname -sm`.strip
+    USER_AGENT = "HB-Crystal #{VERSION}; #{Crystal::VERSION}; #{PLATFORM}"
+
     private getter :api_token
 
     def initialize(@api_token : String)
@@ -13,6 +16,7 @@ module Honeybadger
     private def post(path, body)
       url = "https://api.honeybadger.io#{path}"
       headers = HTTP::Headers{
+        "User-Agent"   => USER_AGENT,
         "X-API-Key"    => api_token,
         "Content-Type" => "application/json",
         "Accept"       => "application/json",
